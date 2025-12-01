@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed File Motors - Fichiers de Reprogrammation Moteur Haute Précision</title>
+    <meta name="description" content="Speed File Motors - Fichiers de reprogrammation moteur haute précision. Stage 1, Stage 2, EGR Off, FAP Off. Compatible KESS3, Autotuner, CMD.">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#D60000',
+                        dark: '#1A1A1A',
+                        gray: '#2D2D2D'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-white font-sans">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-dark overflow-hidden">
+        <div class="absolute inset-0 bg-black/60 z-10"></div>
+        <div class="absolute inset-0">
+            <img src="http://static.photos/technology/1920x1080/42" alt="Moteur performance" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                Fichiers de Reprogrammation<br>
+                <span class="text-primary">Haute Précision</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Optimisation moteur de pointe pour des performances exceptionnelles
+            </p>
+            <a href="#commander" class="inline-flex items-center bg-primary hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                Commander un fichier
+                <i data-feather="arrow-right" class="ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-white">Nos Services Spécialisés</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Stage 1 -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="zap" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Stage 1</h3>
+                    <p class="text-gray-400 mb-4">Optimisation basique pour améliorer performances et économie de carburant</p>
+                    <span class="text-primary font-bold">À partir de 99€</span>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="activity" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Stage 2</h3>
+                    <p class="text-gray-400 mb-4">Optimisation avancée avec modifications matérielles</p>
+                    <span class="text-primary font-bold">À partir de 149€</span>
+                </div>
+
+                <!-- EGR Off -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="wind" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">EGR Off</h3>
+                    <p class="text-gray-400 mb-4">Désactivation système EGR pour performances optimales</p>
+                    <span class="text-primary font-bold">À partir de 79€</span>
+                </div>
+
+                <!-- FAP Off -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="filter" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">FAP Off</h3>
+                    <p class="text-gray-400 mb-4">Suppression filtre à particules</p>
+                    <span class="text-primary font-bold">À partir de 89€</span>
+                </div>
+
+                <!-- AdBlue Off -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="droplet" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">AdBlue Off</h3>
+                    <p class="text-gray-400 mb-4">Désactivation système AdBlue</p>
+                    <span class="text-primary font-bold">À partir de 99€</span>
+                </div>
+
+                <!-- Immo Off -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="unlock" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Immo Off</h3>
+                    <p class="text-gray-400 mb-4">Désactivation antivol électronique</p>
+                    <span class="text-primary font-bold">À partir de 119€</span>
+                </div>
+
+                <!-- Fichier Vierge/Clone -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="copy" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Fichier Vierge/Clone</h3>
+                    <p class="text-gray-400 mb-4">Fichiers originaux ou clonés</p>
+                    <span class="text-primary font-bold">À partir de 59€</span>
+                </div>
+
+                <!-- DTC Off -->
+                <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="alert-circle" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">DTC Off</h3>
+                    <p class="text-gray-400 mb-4">Suppression codes défauts</p>
+                    <span class="text-primary font-bold">À partir de 69€</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-white">Notre Processus d'Optimisation</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 relative">
+                        <span class="text-white text-2xl font-bold">1</span>
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-primary"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Upload</h3>
+                    <p class="text-gray-400">Téléversez votre fichier original</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 relative">
+                        <span class="text-white text-2xl font-bold">2</span>
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-primary"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Analyse</h3>
+                    <p class="text-gray-400">Diagnostic approfondi par nos experts</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 relative">
+                        <span class="text-white text-2xl font-bold">3</span>
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-primary"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Optimisation</h3>
+                    <p class="text-gray-400">Création du fichier optimisé</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Livraison</h3>
+                    <p class="text-gray-400">Réception sous 24-48h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-white">Pourquoi Speed File Motors ?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="award" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Expertise Motoriste</h3>
+                    <p class="text-gray-400">15 ans d'expérience en reprogrammation moteur</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="check-circle" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Fichiers Testés</h3>
+                    <p class="text-gray-400">Tous nos fichiers sont validés en conditions réelles</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="clock" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Support Rapide</h3>
+                    <p class="text-gray-400">Assistance technique 7j/7</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="cpu" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Compatibilité</h3>
+                    <p class="text-gray-400">KESS3, Autotuner, CMD, FoxFlash</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="commander" class="py-20 bg-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-white">Nos Tarifs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic -->
+                <div class="bg-gray-800 rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-4 text-white">Stage 1</h3>
+                    <div class="text-4xl font-bold text-primary mb-6">99€</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-300">
+                            <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                            +20-30% de puissance
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                            +15-25% de couple
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                            Économie de carburant
+                        </li>
+                    </ul>
+                    <a href="#commander" class="block w-full bg-gray-700 hover:bg-primary text-white text-center font-bold py-3 px-6 rounded-lg transition-all duration-300">
+                        Commander
+                    </a>
+                </div>
+
+                <!-- Advanced -->
+                <div class="bg-gray-800 rounded-xl p-8 border-2 border-primary transform scale-105 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white py-1 px-4 rounded-full text-sm font-bold">
+                        POPULAIRE
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Stage 2</h3>
+                    <div class="text-4xl font-bold text-primary mb-6">149€</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-300">
+                            <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                            +35-50% de puissance
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                            +25-40% de couple
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                            Avec modifications
+                        </li>
+                    </ul>
+                    <a href="#commander" class="block w-full bg-primary hover:bg-red-700 text-white text-center font-bold py-3 px-6 rounded-lg transition-all duration-300">
+                        Commander
+                    </a>
+                </div>
+
+                <!-- Désactivations -->
+                <div class="bg-gray-800 rounded-xl p-8 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-4 text-white">Désactivations</h3>
+                    <div class="text-3xl font-bold text-primary mb-6">À partir de 69€</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-300">
+                            <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                            EGR Off - 79€
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                            FAP Off - 89€
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                            AdBlue Off - 99€
+                        </li>
+                    </ul>
+                    <a href="#commander" class="block w-full bg-gray-700 hover:bg-primary text-white text-center font-bold py-3 px-6 rounded-lg transition-all duration-300">
+                        Commander
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Account Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Espace Client</h2>
+                <p class="text-gray-400 mb-8 text-lg">
+                    Accédez à votre espace personnel pour suivre vos commandes, télécharger vos fichiers et bénéficier de notre support technique.
+                </p>
+                <div class="space-y-4">
+                    <a href="/login" class="inline-flex items-center bg-primary hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 mr-4">
+                        <i data-feather="log-in" class="mr-2"></i>
+                        Connexion
+                    </a>
+                    <a href="/register" class="inline-flex items-center bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300">
+                        <i data-feather="user-plus" class="mr-2"></i>
+                        Créer un compte
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-xl p-8 border border-gray-700">
+                <h3 class="text-2xl font-bold mb-6 text-white">Avantages du compte</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center text-gray-300">
+                        <i data-feather="file-text" class="text-primary mr-3"></i>
+                        Historique de vos commandes
+                    </li>
+                    <li class="flex items-center text-gray-300">
+                        <i data-feather="download" class="text-primary mr-3"></i>
+                        Téléchargements illimités
+                    </li>
+                    <li class="flex items-center text-gray-300">
+                        <i data-feather="message-square" class="text-primary mr-3"></i>
+                        Support technique prioritaire
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-dark">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-white">Questions Fréquentes</h2>
+            <div class="space-y-4">
+                <!-- Question 1 -->
+                <div class="bg-gray-800 rounded-lg border border-gray-700">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-700 transition-colors duration-300">
+                        <span class="text-lg font-semibold text-white">Combien de temps pour recevoir mon fichier ?</span>
+                <i data-feather="plus" class="text-primary"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 border-t border-gray-700">
+                        <p class="text-gray-400">Délai standard : 24-48 heures. Pour les demandes urgentes, contactez-nous via WhatsApp.</p>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="bg-gray-800 rounded-lg border border-gray-700">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-700 transition-colors duration-300">
+                        <span class="text-lg font-semibold text-white">Quels outils sont compatibles ?</span>
+                        <i data-feather="plus" class="text-primary"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 border-t border-gray-700">
+                        <p class="text-gray-400">Tous les outils majeurs : KESS3, Autotuner, CMD, FoxFlash, MPPS, Galletto, et bien d'autres.</p>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="bg-gray-800 rounded-lg border border-gray-700">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-700 transition-colors duration-300">
+                        <span class="text-lg font-semibold text-white">Les fichiers sont-ils testés ?</span>
+                        <i data-feather="plus" class="text-primary"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 border-t border-gray-700">
+                        <p class="text-gray-400">Oui, tous nos fichiers sont testés en conditions réelles sur banc de puissance avant livraison.</p>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="bg-gray-800 rounded-lg border border-gray-700">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-700 transition-colors duration-300">
+                        <span class="text-lg font-semibold text-white">Puis-je modifier ma commande ?</span>
+                        <i data-feather="plus" class="text-primary"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 border-t border-gray-700">
+                        <p class="text-gray-400">Oui, tant que le fichier n'a pas été traité. Contactez notre support rapidement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
